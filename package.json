@@ -9,10 +9,12 @@
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "web3": "^4.13.0"
   },
   "scripts": {
     "start": "react-scripts start",
+    "deploy": "truffle compile && truffle migrate --network development && cp -r build/contracts src/contracts/artifact-json",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

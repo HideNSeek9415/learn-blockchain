@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "checkJs": true,
+    "baseUrl": "./",
+    "resolveJsonModule": true,
+    "paths": {
+      "@/*": ["src/*"],
+      "@artifacts/*": ["build/contracts/*"]
+    }
+  },
+  "include": [
+    "src",
+    "public",
+    "tests",
+    "build"
+  ]
+}
